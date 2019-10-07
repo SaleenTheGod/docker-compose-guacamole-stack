@@ -139,6 +139,8 @@ services:
 ## enable next line when using nginx
     - 8080/tcp
     restart: always
+    volumes:
+    - ./guac-extensions:/root/.guacamole/extenstions:rw
 
 ########### optional ##############
   # nginx
